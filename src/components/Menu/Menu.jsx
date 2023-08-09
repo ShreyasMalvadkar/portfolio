@@ -72,7 +72,7 @@ const Menu = () => {
         className={`menu-item ${activeItem === 'extraCurricular' ? 'active' : ''}`}
         onClick={() => handleItemClick('extraCurricular')}
       >
-        EXTRA-CURRICULAR
+        EXTRA CURRICULAR
       </div>
       </NavLink>
 

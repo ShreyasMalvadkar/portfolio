@@ -14,6 +14,7 @@ import ProjSAE from "./components/Projects/Supra/ProjSAE";
 import Welcome from "./components/Welcome/Welcome";
 import TechSkills from "./components/Technical Skills/TechSkills";
 import "./App.css";
+import Extra from "./components/Extra/Extra";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/projquad" element={<ProjQuad />} />
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/techskills" element={<TechSkills />} />
+            <Route path="/extras" element={<Extra />} />
           </Routes>
         </div>
       </div>
