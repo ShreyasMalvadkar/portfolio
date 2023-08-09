@@ -52,19 +52,4 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ShreyasMalvadkar/portfolio.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ShreyasMalvadkar/portfolio/issues"
-  }
 }
