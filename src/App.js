@@ -24,7 +24,7 @@ function App() {
           <Menu />
         </div>
         <div className="col-md-9 d-flex align-self-center center">
-          <Routes>
+          <Routes basename="/portfolio">
             <Route path="/" element={<Welcome />} />
             <Route path="/education" element={<Education />} />
             <Route path="/more" element={<Home />} />
@@ -39,7 +39,7 @@ function App() {
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/techskills" element={<TechSkills />} />
             <Route path="/extras" element={<Extra />} />
-            <Route path='*' exact={true} element={<Welcome/>} />
+            <Route path="*" exact={true} element={<Welcome />} />
           </Routes>
         </div>
       </div>
