@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import './Education.css'; // Import your CSS file for styling
 
 const Education = () => {
@@ -32,7 +34,8 @@ const Education = () => {
     <div className="education-container container-fluid">
       <h2>Education</h2><hr/>
       <div className="education m-2 p-2 division" onClick={togglePG}>
-        <h3 >Post Graduation</h3>
+      {/* <ArrowRightIcon fontSize='large'/><ArrowDropDownIcon fontSize='large'/> */}
+      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Post Graduation</div>
         {showPG && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow' >
@@ -63,7 +66,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggleUG}>
-        <h3>Graduation</h3>
+      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Graduation</div>
         {showUG && (
           <div className="education-details">
            <table className='table table-striped table-bordered table-hover table-dark shadow'>
@@ -94,7 +97,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggle12th}>
-        <h3>12th Grade</h3>
+      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}12<sup>th</sup> Grade</div>
         {show12th && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
@@ -125,7 +128,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggle10th}>
-        <h3>10th Grade</h3>
+      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}10<sup>th</sup> Grade</div>
         {show10th && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>

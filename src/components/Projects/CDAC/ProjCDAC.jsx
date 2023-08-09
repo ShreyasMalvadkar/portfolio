@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import { Button } from '@mui/material'
 import ImageIcon from '@mui/icons-material/Image';
 import ForwardIcon from '@mui/icons-material/Forward';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function ProjCDAC() {
     const project = {
@@ -25,7 +26,7 @@ function ProjCDAC() {
     <div>
       <h3 className='center p-2'>{project.heading}</h3>
       <div className="project-card">
-      <img src={project.imageUrl} alt={project.title} className="project-image" />
+      <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" />
       <div className="project-content">
         <h2 className="project-title text-center p-3">{project.title}</h2>
         <p className="project-description"><u><strong>Team Size</strong></u>:{project.teamSize}</p>
