@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './Welcome.css';
-import profilePic from './Shreyas.png'
 import { NavLink, useNavigate } from 'react-router-dom';
 
 const Welcome = () => {

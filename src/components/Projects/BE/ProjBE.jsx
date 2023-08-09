@@ -4,6 +4,7 @@ import { Button } from '@mui/material'
 import chassis from './chassis.jpg'
 import './ProjBE.css'
 import ForwardIcon from '@mui/icons-material/Forward';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function ProjBE() {
     const project = {
@@ -24,7 +25,7 @@ function ProjBE() {
     <div>
       <h3 className='center p-2'>{project.heading}</h3>
       <div className="project-card">
-          <img src={project.imageUrl} alt={project.title} className="project-image"/>
+          <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image"/>
       <div className="project-content">
         <h2 className="project-title text-center p-3">{project.title}</h2>
         <p className="project-description"><u><strong>Team Size</strong></u>:{project.teamSize}</p>

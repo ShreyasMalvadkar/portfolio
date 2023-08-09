@@ -3,6 +3,7 @@ import ansys from './Ansys.jpg'
 import catia from './Catia.jpg'
 import React, { useState } from 'react';
 import './Certificates.css'; // Import your CSS file for styling
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -45,7 +46,7 @@ const Certificates = () => {
             onClick={() => handleCertificateClick(index)}
           >
             <h2>{certificate.title}</h2>
-            <img src={certificate.imageSrc} alt={certificate.title} />
+            <LazyLoadImage className='img' src={certificate.imageSrc} alt={certificate.title} effect="blur"/>
           </div>
         ))
       )}
