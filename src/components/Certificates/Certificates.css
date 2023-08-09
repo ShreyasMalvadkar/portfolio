@@ -1,0 +1,55 @@
+.certificate-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certificate-item {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .certificate-item.active {
+    border-color: blue; /* Apply your desired active state styling */
+  }
+  
+  .certificate-item h2 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  
+  .certificate-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .full-screen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .full-screen-overlay img {
+    max-width: 90%;
+    max-height: 80%;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
