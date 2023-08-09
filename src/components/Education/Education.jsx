@@ -70,11 +70,11 @@ const Education = () => {
               <tbody>
                 <tr>
                   <td>Degree</td>
-                  <td>Post Graduate Diploma in Advanced Computing (PG-DAC)</td>
+                  <td>BE Mechanical</td>
                 </tr>
                 <tr>
                   <td>University</td>
-                  <td>Centre for Development of Advanced Computing (CDAC), Pune</td>
+                  <td>PAH Solapur University</td>
                 </tr>
                 <tr>
                   <td>Grade</td>
@@ -86,7 +86,7 @@ const Education = () => {
                 </tr>
                 <tr>
                   <td>Duration</td>
-                  <td>15 Sept 2022 - 15 March 2023</td>
+                  <td>2015 - 2019</td>
                 </tr>
               </tbody>
             </table>
