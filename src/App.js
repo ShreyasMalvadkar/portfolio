@@ -39,6 +39,7 @@ function App() {
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/techskills" element={<TechSkills />} />
             <Route path="/extras" element={<Extra />} />
+            <Route path='*' exact={true} element={<Welcome/>} />
           </Routes>
         </div>
       </div>
