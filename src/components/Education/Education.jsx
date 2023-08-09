@@ -47,7 +47,7 @@ const Education = () => {
                 </tr>
                 <tr>
                   <td>Grade</td>
-                  <td>A+</td>
+                  <td>A</td>
                 </tr>
                 <tr>
                   <td>Percentage</td>
@@ -78,15 +78,15 @@ const Education = () => {
                 </tr>
                 <tr>
                   <td>Grade</td>
-                  <td>A+</td>
+                  <td>A</td>
                 </tr>
                 <tr>
                   <td>Percentage</td>
-                  <td>76.75%</td>
+                  <td>70.03%</td>
                 </tr>
                 <tr>
                   <td>Duration</td>
-                  <td>2015 - 2019</td>
+                  <td>June 2015 - March 2019</td>
                 </tr>
               </tbody>
             </table>
@@ -99,25 +99,25 @@ const Education = () => {
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
               <tbody>
-                <tr>
+                {/* <tr>
                   <td>Degree</td>
                   <td>Post Graduate Diploma in Advanced Computing (PG-DAC)</td>
-                </tr>
+                </tr> */}
                 <tr>
-                  <td>University</td>
-                  <td>Centre for Development of Advanced Computing (CDAC), Pune</td>
+                  <td>Board</td>
+                  <td>Maharashtra State Board</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>Grade</td>
                   <td>A+</td>
-                </tr>
+                </tr> */}
                 <tr>
                   <td>Percentage</td>
-                  <td>76.75%</td>
+                  <td>68.31%</td>
                 </tr>
                 <tr>
                   <td>Duration</td>
-                  <td>15 Sept 2022 - 15 March 2023</td>
+                  <td>201-2015</td>
                 </tr>
               </tbody>
             </table>
@@ -130,25 +130,25 @@ const Education = () => {
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
               <tbody>
-                <tr>
+                {/* <tr>
                   <td>Degree</td>
                   <td>Post Graduate Diploma in Advanced Computing (PG-DAC)</td>
-                </tr>
+                </tr> */}
                 <tr>
-                  <td>University</td>
-                  <td>Centre for Development of Advanced Computing (CDAC), Pune</td>
+                  <td>Board</td>
+                  <td>Maharashtra State Board</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>Grade</td>
                   <td>A+</td>
-                </tr>
+                </tr> */}
                 <tr>
                   <td>Percentage</td>
-                  <td>76.75%</td>
+                  <td>85.64%</td>
                 </tr>
                 <tr>
                   <td>Duration</td>
-                  <td>15 Sept 2022 - 15 March 2023</td>
+                  <td>2012 - 2013</td>
                 </tr>
               </tbody>
             </table>
