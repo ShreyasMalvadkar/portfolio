@@ -16,10 +16,10 @@ const ContactDetails = () => {
           <h2>shreyasmalvadkar219@gmail.com</h2>
           <p><EmailIcon fontSize='medium'/>  Email Id</p>
         </div>
-        <div className="contact-item m-2">
+        {/*<div className="contact-item m-2">
           <h2>+91-9850128014</h2>
           <p><CallIcon fontSize='medium'/> Mobile Number</p>
-        </div>
+        </div>*/}
         <div className="contact-item m-2">
           <h2>Pune, Maharashtra, India</h2>
           <p><HomeIcon fontSize='medium'/> Location</p>
