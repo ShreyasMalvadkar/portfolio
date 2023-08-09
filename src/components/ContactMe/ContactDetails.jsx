@@ -9,7 +9,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 const ContactDetails = () => {
   return (
-    <div className="contact-page-container container-fluid text-center shadow  p-2">
+    <div className="container-fluid text-center shadow  p-2">
       <h1>Contact Details</h1>
       <div className="contact-info">
         <div className="contact-item m-2">
