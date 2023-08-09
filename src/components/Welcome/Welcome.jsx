@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Welcome.css';
 import profilePic from './Shreyas.png'
 import { NavLink } from 'react-router-dom';
 
 const Welcome = () => {
+
+  useEffect(()=>{
+  },[])
+  
   return (
     <div className="welcome-container container-fluid">
       <div className="welcome-content">
