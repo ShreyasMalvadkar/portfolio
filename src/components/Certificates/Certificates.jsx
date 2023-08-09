@@ -10,8 +10,8 @@ const Certificates = () => {
 
   const certificates = [
     { title: 'CDAC', imageSrc: cdac },
-    {/* { title: 'ANSYS', imageSrc: ansys },
-    { title: 'CATIA', imageSrc:catia },*/}
+    { title: 'ANSYS', imageSrc: ansys },
+    { title: 'CATIA', imageSrc:catia },
   ];
 
   const handleCertificateClick = (index) => {
@@ -24,7 +24,9 @@ const Certificates = () => {
   };
 
   return (
-    <div className="certificate-gallery">
+    <>
+    <h2>Certificates</h2>
+    <div className="certificate-gallery" onClick={handleBackButtonClick}>
       {isFullScreen ? (
         <div className="full-screen-overlay">
           <button className="back-button" onClick={handleBackButtonClick}>
@@ -48,6 +50,7 @@ const Certificates = () => {
         ))
       )}
     </div>
+    </>
   );
 };
 

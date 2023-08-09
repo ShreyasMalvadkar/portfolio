@@ -9,7 +9,7 @@ const Welcome = () => {
 
   useEffect(()=>{
     navigate('/');
-    console.log("navigated")
+    console.log("navigate")
   },[])
 
   return (
@@ -17,14 +17,13 @@ const Welcome = () => {
       <div className="welcome-content">
       <p>Hi, I'm Shreyas Sunil Malvadkar</p>
         <h1>Welcome to My Portfolio</h1>
-        <div className='row center'>
+        {/* <div className='row center'>
           <div className='col-md-3'>
           <NavLink to='/more' className='nav-link'>
             <p><img src={profilePic} className="img-fluid img-shadow rounded" alt="Profile" title='Click for More info'/></p>
           </NavLink>
           </div>
-        </div>
-
+        </div> */}
       </div>
     </div>
   );

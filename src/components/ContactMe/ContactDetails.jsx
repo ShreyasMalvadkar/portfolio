@@ -25,7 +25,7 @@ const ContactDetails = () => {
           <p><HomeIcon fontSize='medium'/> Location</p>
         </div>
 
-        <a
+        {/* <a
         href={resume}
         download="Example-PDF-document"
         target="_blank"
@@ -41,7 +41,7 @@ const ContactDetails = () => {
             Resume</h2>
             <p>Download</p>
           </div>
-        </a>
+        </a> */}
         {/* <div className="contact-item m-2">
           <NavLink to='/sendEmail'className='nav-link shadow'>
             <h2><EmailIcon fontSize='large'/></h2>
