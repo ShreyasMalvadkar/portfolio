@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11879225.css",
+    "main.js": "/static/js/main.dfb4064e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/chassis.jpg": "/static/media/chassis.9a61dee8cdf650bb58ad.jpg",
+    "static/media/Shreyas.png": "/static/media/Shreyas.61bb1df274c53b49b89f.png",
+    "static/media/supra.gif": "/static/media/supra.8f61d7a78d5bf08e5f70.gif",
+    "static/media/CDAC Certificate.jpg": "/static/media/CDAC Certificate.ba6b3d9b09d7dcc676cb.jpg",
+    "static/media/projectImage.png": "/static/media/projectImage.78f7493497148af807f1.png",
+    "static/media/Quad.jpg": "/static/media/Quad.8628a93a1e83979ba98a.jpg",
+    "static/media/ShreyasMalvadkar_Resume.pdf": "/static/media/ShreyasMalvadkar_Resume.ed063ba65f54f9c24ce8.pdf",
+    "static/media/Ansys.jpg": "/static/media/Ansys.a7355a5474a984c8a68d.jpg",
+    "static/media/Catia.jpg": "/static/media/Catia.2a52a8cae2cbfe9a2fa4.jpg",
+    "static/media/VSMSDatabaseERD.png": "/static/media/VSMSDatabaseERD.e8213b2e20f8b9134b17.png",
+    "static/media/contact.gif": "/static/media/contact.6020c2a9a682768b6699.gif",
+    "index.html": "/index.html",
+    "main.11879225.css.map": "/static/css/main.11879225.css.map",
+    "main.dfb4064e.js.map": "/static/js/main.dfb4064e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11879225.css",
+    "static/js/main.dfb4064e.js"
+  ]
+}
