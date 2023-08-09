@@ -10,8 +10,8 @@ const Certificates = () => {
 
   const certificates = [
     { title: 'CDAC', imageSrc: cdac },
-    { title: 'ANSYS', imageSrc: ansys },
-    { title: 'CATIA', imageSrc:catia },
+    {/* { title: 'ANSYS', imageSrc: ansys },
+    { title: 'CATIA', imageSrc:catia },*/}
   ];
 
   const handleCertificateClick = (index) => {
