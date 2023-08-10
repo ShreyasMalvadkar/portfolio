@@ -1,19 +1,23 @@
 import React from 'react';
 import './ContactDetails.css';
 import EmailIcon from '@mui/icons-material/Email';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // import FileDownloadIcon from '@mui/icons-material/FileDownload';
 // import resume from '../Document/ShreyasMalvadkar_Resume.pdf'
 // import CallIcon from '@mui/icons-material/Call';
 import HomeIcon from '@mui/icons-material/Home';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const ContactDetails = () => {
+  const handleSendMail=()=>{
+
+  }
   return (
     <div className="text-center shadow  p-2 container-fluid">
       <h1>Contact Details</h1>
       <div className="contact-info">
         <div className="contact-item m-2 container-fluid">
-          <h2>shreyasmalvadkar219@gmail.com</h2 >
+          <h2 onClick={handleSendMail}>shreyasmalvadkar219@gmail.com</h2 >
           <p><EmailIcon fontSize='medium'/>  Email Id</p>
         </div>
         {/*<div className="contact-item m-2">
@@ -24,7 +28,6 @@ const ContactDetails = () => {
           <h2>Pune, Maharashtra, India</h2>
           <p><HomeIcon fontSize='medium'/> Location</p>
         </div>
-
         {/* <a
         href={resume}
         download="Example-PDF-document"
