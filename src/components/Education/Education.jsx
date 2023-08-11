@@ -65,7 +65,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggleUG}>
-      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Graduation</div>
+      <div className='h3'>{showUG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Graduation</div>
         {showUG && (
           <div className="education-details">
            <table className='table table-striped table-bordered table-hover table-dark shadow'>
@@ -96,7 +96,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggle12th}>
-      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}12<sup>th</sup> Grade</div>
+      <div className='h3'>{show12th ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}12<sup>th</sup> Grade</div>
         {show12th && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
@@ -127,7 +127,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggle10th}>
-      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}10<sup>th</sup> Grade</div>
+      <div className='h3'>{show12th ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}10<sup>th</sup> Grade</div>
         {show10th && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
