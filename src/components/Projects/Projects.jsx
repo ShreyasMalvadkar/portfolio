@@ -34,7 +34,7 @@ function Projects() {
       ];
 
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid center'>
         <h1>Projects</h1>
 
       <div>
