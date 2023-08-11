@@ -36,7 +36,7 @@ function ProjQuad() {
         <p className="project-description"><u><strong>Team Size</strong></u>:{project.teamSize}</p>
         <p className="project-description"><u><strong>Duration</strong></u>:{project.duration}</p>
         <p className="project-technologies">
-          <u><strong>Technologies</strong></u>:{project.awards.join(', ')}
+          <u><strong>Awards</strong></u>:{project.awards.join(', ')}
         </p>
         <p className="project-description"><u><strong>Description</strong></u>:{project.description}</p>
         <p className="project-description"><u><strong>USP</strong></u>:{project.USP}</p>
