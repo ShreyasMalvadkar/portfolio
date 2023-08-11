@@ -4,7 +4,6 @@ import './Home.css';
 const Home = () => {
   const [showAboutMe, setShowAboutMe] = useState(true);
   const [showWhyChooseMe, setShowWhyChooseMe] = useState(false);
-  const [showAll, setShowAll] = useState(false);
 
   const toggleAboutMe = () => {
     setShowAboutMe(!showAboutMe);
@@ -16,18 +15,11 @@ const Home = () => {
     setShowAboutMe(false);
   };
 
-//   const toggleShowAll = () => {
-//     setShowAll(!showAll);
-//   };
-
   return (
     <div className="portfolio-container">
       <div className="content">
-        {/* <button className="show-all-button" onClick={toggleShowAll}>
-          {showAll ? 'Hide All' : 'Show All'}
-        </button> */}
 
-        <div className={`division ${showAboutMe || showAll ? 'show' : ''}`}>
+        <div className={`division ${showAboutMe ? 'show' : ''}`}>
           <h2 onClick={toggleAboutMe}>About Me</h2>
           <div className={`sub-division ${showAboutMe ? 'show' : ''}`}>
             <p>
@@ -40,7 +32,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={`division ${showWhyChooseMe || showAll ? 'show' : ''}`}>
+        <div className={`division ${showWhyChooseMe? 'show' : ''}`}>
           <h2 onClick={toggleWhyChooseMe}>Why Choose Me</h2>
           <div className={`sub-division ${showWhyChooseMe ? 'show' : ''}`}>
             <p>

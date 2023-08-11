@@ -1,5 +1,6 @@
 .App {
   min-height: 100vh;
+  min-width: 100vw;
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -19,7 +20,7 @@
 }
 
 .display{
-  min-height: 78vh;
+  min-height: 90vh;
 }
 
 @media screen and (max-width: 768px) {

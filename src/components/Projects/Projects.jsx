@@ -41,7 +41,7 @@ function Projects() {
       {data.map((item, idx) => (
         <div className="division" key={idx}>
           <NavLink to={item.link} className="nav-link">
-            <ArrowRightIcon fontSize='large'/>{item.title}
+          <h2><ArrowRightIcon fontSize='large'/>{item.title}</h2>
           </NavLink>
         </div>
         ))}

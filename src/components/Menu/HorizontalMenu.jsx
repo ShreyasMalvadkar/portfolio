@@ -11,17 +11,14 @@ const HorizontalMenu = () => {
   };
 
   return (
-    <div className="horizontal-menu ">
+    <div className="horizontal-menu container-fluid">
       
       <NavLink to='/about' className='nav-link'>
       <div
         className={`menu-item ${activeItem === 'about' ? 'active' : ''}`}
         onClick={() => handleItemClick('about')}
       >
-        <div className="menu-item">
-          <i className="fas fa-user"></i>
-          <span>About</span>
-        </div>
+          <h3>About</h3>
       </div>
       </NavLink>
 
@@ -30,10 +27,7 @@ const HorizontalMenu = () => {
         className={`menu-item ${activeItem === 'technicalSiklls' ? 'active' : ''}`}
         onClick={() => handleItemClick('technicalSiklls')}
       >
-        <div className="menu-item">
-          <i className="fas fa-code"></i>
-          <span>Technical Skills</span>
-        </div>
+          <h3>Technical Skills</h3>
 
       </div>
       </NavLink>
@@ -43,10 +37,7 @@ const HorizontalMenu = () => {
         className={`menu-item ${activeItem === 'projects' ? 'active' : ''} `}
         onClick={() => handleItemClick('projects')}
       >
-        <div className="menu-item">
-          <i className="fas fa-project-diagram"></i>
-          <span>Project Details</span>
-        </div>
+          <h3>Project Details</h3>
       </div>
       </NavLink>
 
@@ -55,10 +46,7 @@ const HorizontalMenu = () => {
         className={`menu-item ${activeItem === 'education' ? 'active' : ''}`}
         onClick={() => handleItemClick('education')}
       >
-        <div className="menu-item">
-          <i className="fas fa-graduation-cap"></i>
-          <span>Education</span>
-        </div>
+          <h3>Education</h3>
       </div>
       </NavLink>
 
@@ -67,10 +55,7 @@ const HorizontalMenu = () => {
         className={`menu-item ${activeItem === 'certificates' ? 'active' : ''}`}
         onClick={() => handleItemClick('certificates')}
       >
-        <div className="menu-item">
-          <i className="fas fa-certificate"></i>
-          <span>Certificates</span>
-        </div>
+          <h3>Certificates</h3>
       </div>
       </NavLink>
 
@@ -79,10 +64,7 @@ const HorizontalMenu = () => {
         className={`menu-item ${activeItem === 'extraCurricular' ? 'active' : ''}`}
         onClick={() => handleItemClick('extraCurricular')}
       >
-        <div className="menu-item">
-          <i className="fas fa-plus"></i>
-          <span>Extra</span>
-        </div>
+          <h3>Extra</h3>
       </div>
       </NavLink>
 
@@ -92,10 +74,7 @@ const HorizontalMenu = () => {
         className={`menu-item ${activeItem === 'contact' ? 'active' : ''}`}
         onClick={() => handleItemClick('contact')}
       >
-        <div className="menu-item">
-          <i className="fas fa-envelope"></i>
-          <span>Contact</span>
-        </div>
+          <h3>Contact</h3>
       </div>
       </NavLink>
     </div>

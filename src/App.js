@@ -35,7 +35,7 @@ function App() {
         {/* <div className="col-md-3 center">
           <Menu />
         </div> */}
-        <div className="col-md-12 d-flex align-self-center center">
+        <div className="col-lg-12 d-flex align-self-center center">
           <ScrollToTop />
           <Routes basename="/portfolio">
             <Route path="/" element={<AboutMe />} />
@@ -57,7 +57,7 @@ function App() {
         </div>
       </div>
       <div className="row container-fluid">
-        <div className="col-md-12 d-flex align-self-center center">
+        <div className="col-lg-12 d-flex align-self-center">
           <HorizontalMenu />
         </div>
       </div>

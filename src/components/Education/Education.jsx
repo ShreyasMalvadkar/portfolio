@@ -32,10 +32,9 @@ const Education = () => {
 
   return (
     <div className="education-container container-fluid">
-      <h2>Education</h2><hr/>
+      <h3>Education</h3><hr/>
       <div className="education m-2 p-2 division" onClick={togglePG}>
-      {/* <ArrowRightIcon fontSize='large'/><ArrowDropDownIcon fontSize='large'/> */}
-      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Post Graduation</div>
+      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Post Graduation</div>
         {showPG && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow' >
@@ -66,7 +65,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggleUG}>
-      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Graduation</div>
+      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Graduation</div>
         {showUG && (
           <div className="education-details">
            <table className='table table-striped table-bordered table-hover table-dark shadow'>
@@ -97,7 +96,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggle12th}>
-      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}12<sup>th</sup> Grade</div>
+      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}12<sup>th</sup> Grade</div>
         {show12th && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
@@ -120,7 +119,7 @@ const Education = () => {
                 </tr>
                 <tr>
                   <td>Duration</td>
-                  <td>201-2015</td>
+                  <td>2014-2015</td>
                 </tr>
               </tbody>
             </table>
@@ -128,7 +127,7 @@ const Education = () => {
         )}
       </div>
       <div className="education m-2 p-2 division" onClick={toggle10th}>
-      <div className='h2'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}10<sup>th</sup> Grade</div>
+      <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}10<sup>th</sup> Grade</div>
         {show10th && (
           <div className="education-details">
             <table className='table table-striped table-bordered table-hover table-dark shadow'>
