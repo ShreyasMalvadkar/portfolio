@@ -11,10 +11,10 @@ const Extra = () => {
     ],
     'Hobbies': [
       'Listning Songs',
-      'Podcasts',
+      'Listning Podcasts',
     ],
     'Interests': [
-      'Indian History',
+      'Photography',
       'Formula 1 Racing',
       'Reading',
     ],

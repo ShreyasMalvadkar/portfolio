@@ -1,28 +1,30 @@
+/* Certificates.css */
 .certificate-gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
 }
 
 .certificate-item {
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
   cursor: pointer;
-}
-
-.certificate-item.active {
-  border-color: blue; /* Apply your desired active state styling */
-}
-
-.certificate-item h2 {
-  margin-top: 5px;
-  font-size: 18px;
+  text-align: center;
 }
 
 .certificate-item img {
-  max-width: 100%;
-  height: auto;
+  min-width: 250px; /* Initial small size */
+  min-height: 250px;
+  max-width: 300px; /* Initial small size */
+  max-height: 300px;
+  transition: all 0.3s ease-in-out; /* Smooth transition when changing size */
+}
+
+.certificate-item.active {
+  opacity: 0.5;
+}
+
+.certificate-item h2 {
+  margin: 10px 0;
 }
 
 .full-screen-overlay {
@@ -31,24 +33,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.full-screen-overlay .img {
-  max-width: 90%;
-  max-height: 80%;
-}
-
 .back-button {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   background-color: transparent;
-  border: none;
   color: white;
+  border: none;
   cursor: pointer;
+}
+
+.full-screen-overlay img {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .certificate-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }

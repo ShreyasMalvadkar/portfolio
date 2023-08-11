@@ -19,6 +19,17 @@
 }
 
 .display{
-  min-height: 100vh;
+  min-height: 85vh;
+}
+
+@media screen and (max-width: 768px) {
+  .horizontal-menu {
+    flex-direction: column;
+    align-items: stretch;
+    position: sticky;
+    top: 0;
+  }
+
+  /* Rest of the media query styles */
 }
 

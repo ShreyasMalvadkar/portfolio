@@ -15,20 +15,33 @@ import Welcome from "./components/Welcome/Welcome";
 import TechSkills from "./components/Technical Skills/TechSkills";
 import "./App.css";
 import Extra from "./components/Extra/Extra";
+import HorizontalMenu from "./components/Menu/HorizontalMenu";
+import { useEffect } from "react";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import AboutMe from "./components/About/AboutMe";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour in place of 'smooth' */
+    });
+  }, []);
+
   return (
     <div className="App gradient container-fluid">
       <div className="row display">
-        <div className="col-md-3 center">
+        {/* <div className="col-md-3 center">
           <Menu />
-        </div>
-        <div className="col-md-9 d-flex align-self-center center">
+        </div> */}
+        <div className="col-md-12 d-flex align-self-center center">
+          <ScrollToTop />
           <Routes basename="/portfolio">
-            <Route path="/" element={<Welcome />} />
+            <Route path="/" element={<AboutMe />} />
             <Route path="/education" element={<Education />} />
             <Route path="/more" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<AboutMe />} />
             <Route path="/contact" element={<ContactDetails />} />
             <Route path="/sendEmail" element={<ContactEmail />} />
             <Route path="/projects" element={<Projects />} />
@@ -41,6 +54,11 @@ function App() {
             <Route path="/extras" element={<Extra />} />
             <Route path="*" exact={true} element={<Welcome />} />
           </Routes>
+        </div>
+      </div>
+      <div className="row container-fluid">
+        <div className="col-md-12 d-flex align-self-center center">
+          <HorizontalMenu />
         </div>
       </div>
     </div>

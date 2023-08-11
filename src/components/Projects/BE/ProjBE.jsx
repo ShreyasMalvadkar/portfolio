@@ -22,12 +22,17 @@ function ProjBE() {
       };
 
   return (
-    <div>
-      <h3 className='center p-2'>{project.heading}</h3>
-      <div className="project-card">
-          <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image"/>
-      <div className="project-content">
-        <h2 className="project-title text-center p-3">{project.title}</h2>
+    <div className='container-fluid '>
+       <h3 className='center p-2'>{project.heading}</h3>
+
+       <div className='row project-card'>
+       <div className='col-lg-3'>
+        <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" />
+      </div>
+      
+      <div className='col-lg-8'>
+        <div className="project-content">
+        <h2 className="project-title text-center p-3 ">{project.title}</h2>
         <p className="project-description"><u><strong>Team Size</strong></u>:{project.teamSize}</p>
         <p className="project-description"><u><strong>Duration</strong></u>:{project.duration}</p>
         <p className="project-technologies">
@@ -35,9 +40,9 @@ function ProjBE() {
         </p>
         <p className="project-description"><u><strong>Description</strong></u>:{project.description}</p>
         <p className="project-description"><u><strong>USP</strong></u>:{project.USP}</p>
-
-      </div>
-    </div>
+        </div>
+        </div>
+       </div>
     <NavLink to='/projsae' className="nav-link d-flex justify-content-end">
       <Button fontSize='large' style={{color:"white", fontSize:"1rem"}}>
         SAE SUPRA Competition <ForwardIcon fontSize='large'/>

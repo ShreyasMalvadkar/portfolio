@@ -17,39 +17,59 @@ function ProjQuad() {
         imageUrl:quad ,
         team_id:"Q170808",
         teamSize:"28",
-        youtube_link:"https://www.youtube.com/watch?v=F0D1x4HY8A4"
+        youtube_link:"https://youtu.be/F0D1x4HY8A4?t=170",
+        journey_ytLink:"https://www.youtube.com/watch?v=ZaBgRhd_qP0"
       };
 
   return (
-    <div>
-      <h3 className='center p-2'>{project.heading}</h3>
-      <div className="project-card">
-          <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image"/>
-      <div className="project-content">
-        <h2 className="project-title text-center p-3">{project.title}</h2>
+    <div className='container-fluid '>
+       <h3 className='center p-2'>{project.heading}</h3>
+
+       <div className='row project-card'>
+       <div className='col-lg-3 cneter'>
+        <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" />
+      </div>
+      
+      <div className='col-lg-8'>
+        <div className="project-content">
+        <h2 className="project-title text-center p-3 ">{project.title}</h2>
         <p className="project-description"><u><strong>Team Size</strong></u>:{project.teamSize}</p>
         <p className="project-description"><u><strong>Duration</strong></u>:{project.duration}</p>
-        <p className="project-description"><u><strong>Team ID</strong></u>:{project.team_id}</p>
         <p className="project-technologies">
-          <u><strong>Awards</strong></u>:{project.awards.join(', ')}
+          <u><strong>Technologies</strong></u>:{project.awards.join(', ')}
         </p>
         <p className="project-description"><u><strong>Description</strong></u>:{project.description}</p>
-        <p className="d-flex justify-content-end">
+        <p className="project-description"><u><strong>USP</strong></u>:{project.USP}</p>
+        <div className="d-flex justify-content-end">
         <a
           href={project.youtube_link}
          
-          target="_blank"
+          target="_blank"x
           rel="noreferrer"
           style={{textDecoration:'none'}}
           className='nav-link'
           >   
             <div className="contact-item m-2" >
-              <h3><YouTubeIcon fontSize='large'/>YouTube Link</h3>
+              <h3><YouTubeIcon fontSize='large'/>Competition Video</h3>
             </div>
-          </a>
-        </p>
-      </div>
-    </div>
+        </a>
+        &nbsp;
+        <a
+          href={project.journey_ytLink}
+         
+          target="_blank"x
+          rel="noreferrer"
+          style={{textDecoration:'none'}}
+          className='nav-link'
+          >   
+            <div className="contact-item m-2" >
+              <h3><YouTubeIcon fontSize='large'/>Team Video</h3>
+            </div>
+        </a>
+        </div>
+        </div>
+        </div>
+       </div>
     <NavLink to='/projects' className="nav-link d-flex justify-content-end">
       <Button fontSize='large' style={{color:"white"}}>Back</Button>
     </NavLink>

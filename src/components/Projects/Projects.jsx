@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import './Projects.css';
 
 
@@ -39,7 +40,9 @@ function Projects() {
       <div>
       {data.map((item, idx) => (
         <div className="division" key={idx}>
-          <NavLink to={item.link} className="nav-link">{item.title}</NavLink>
+          <NavLink to={item.link} className="nav-link">
+            <ArrowRightIcon fontSize='large'/>{item.title}
+          </NavLink>
         </div>
         ))}
         </div>
