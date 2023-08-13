@@ -51,7 +51,7 @@ const ContactEmail = () => {
     const service_id = process.env.EmailJs_SERVICE_ID;
     const template_id = process.env.EmailJs_TEMPLATE_ID;
     const user_id = process.env.EmailJs_PUBLIC_API_KEY;
-    const myEmail = process.env.TO_EMAIL_ID;
+    const myEmail = process.env.EMAIL_ID;
 
     var data = {
         service_id: service_id,
