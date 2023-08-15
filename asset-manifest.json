@@ -1,24 +1,30 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.798ecbad.css",
-    "main.js": "/portfolio/static/js/main.4a37dd15.js",
+    "main.js": "/portfolio/static/js/main.653b395b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/chassis.jpg": "/portfolio/static/media/chassis.9a61dee8cdf650bb58ad.jpg",
+    "static/media/chassis.jpg": "/portfolio/static/media/chassis.ce81711c205d16cf4de3.jpg",
     "static/media/supra.gif": "/portfolio/static/media/supra.8f61d7a78d5bf08e5f70.gif",
     "static/media/CDAC Certificate.jpg": "/portfolio/static/media/CDAC Certificate.ba6b3d9b09d7dcc676cb.jpg",
-    "static/media/projectImage.png": "/portfolio/static/media/projectImage.78f7493497148af807f1.png",
     "static/media/Quad.jpg": "/portfolio/static/media/Quad.8628a93a1e83979ba98a.jpg",
     "static/media/Ansys.jpg": "/portfolio/static/media/Ansys.a7355a5474a984c8a68d.jpg",
     "static/media/Catia.jpg": "/portfolio/static/media/Catia.2a52a8cae2cbfe9a2fa4.jpg",
+    "static/media/CDAC__low.jpg": "/portfolio/static/media/CDAC__low.5a46d9edab3d7fc9187b.jpg",
+    "static/media/projectImage.jpg": "/portfolio/static/media/projectImage.084828e815d1e19eaaac.jpg",
     "static/media/VSMSDatabaseERD.png": "/portfolio/static/media/VSMSDatabaseERD.e8213b2e20f8b9134b17.png",
     "static/media/contact.gif": "/portfolio/static/media/contact.6020c2a9a682768b6699.gif",
+    "static/media/Quad_low.jpg": "/portfolio/static/media/Quad_low.3b99408e2a3fc3d96f14.jpg",
+    "static/media/Ansys_low.jpg": "/portfolio/static/media/Ansys_low.a6f78b50f960cfaeaf41.jpg",
+    "static/media/Catia_low.jpg": "/portfolio/static/media/Catia_low.a87e2634a93550c4fb78.jpg",
+    "static/media/chassis_low.jpg": "/portfolio/static/media/chassis_low.c5e4d8b749e126a8a7a4.jpg",
+    "static/media/projectImg_low.jpg": "/portfolio/static/media/projectImg_low.c273944b52f1d0b9f694.jpg",
     "index.html": "/portfolio/index.html",
     "main.798ecbad.css.map": "/portfolio/static/css/main.798ecbad.css.map",
-    "main.4a37dd15.js.map": "/portfolio/static/js/main.4a37dd15.js.map",
+    "main.653b395b.js.map": "/portfolio/static/js/main.653b395b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.798ecbad.css",
-    "static/js/main.4a37dd15.js"
+    "static/js/main.653b395b.js"
   ]
 }
