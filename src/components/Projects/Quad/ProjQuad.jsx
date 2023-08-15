@@ -2,9 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from '@mui/material'
 import quad from './Quad.jpg'
+import quad_low from './Quad_low.jpg'
 import './ProjQuad.css'
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProgressiveImage from '../../ImageLoader/ProgressiveImage'
 
 function ProjQuad() {
     const project = {
@@ -27,7 +29,8 @@ function ProjQuad() {
 
        <div className='row project-card'>
        <div className='col-lg-3 cneter'>
-        <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" />
+       <ProgressiveImage src={project.imageUrl} alt={project.title} className="project-image" placeholder={quad_low}/>
+        {/* <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" /> */}
       </div>
       
       <div className='col-lg-8'>

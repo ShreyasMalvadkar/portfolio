@@ -2,9 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from '@mui/material'
 import chassis from './chassis.jpg'
+import chassis_low from './chassis_low.jpg'
 import './ProjBE.css'
 import ForwardIcon from '@mui/icons-material/Forward';
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProgressiveImage from '../../ImageLoader/ProgressiveImage'
 
 function ProjBE() {
     const project = {
@@ -27,7 +29,8 @@ function ProjBE() {
 
        <div className='row project-card'>
        <div className='col-lg-3'>
-        <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" />
+       <ProgressiveImage src={project.imageUrl} alt={project.title} className="project-image" placeholder={chassis_low}/>
+        {/* <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" /> */}
       </div>
       
       <div className='col-lg-8'>

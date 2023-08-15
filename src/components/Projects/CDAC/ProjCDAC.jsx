@@ -1,5 +1,6 @@
 import React from 'react'
-import projectImg from './projectImage.png'
+import projectImg from './projectImage.jpg'
+import projectImg_low from './projectImg_low.jpg'
 import erdDiagram from './VSMSDatabaseERD.png'
 import '../ProjectDetails.css'
 import { NavLink } from 'react-router-dom'
@@ -7,6 +8,7 @@ import { Button } from '@mui/material'
 import ImageIcon from '@mui/icons-material/Image';
 import ForwardIcon from '@mui/icons-material/Forward';
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProgressiveImage from '../../ImageLoader/ProgressiveImage'
 
 function ProjCDAC() {
     const project = {
@@ -28,7 +30,8 @@ function ProjCDAC() {
 
        <div className='row project-card'>
        <div className='col-lg-3 center'>
-        <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" />
+       <ProgressiveImage src={project.imageUrl} alt={project.title} className="project-image" placeholder={projectImg_low}/>
+        {/* <LazyLoadImage effect='blur' src={project.imageUrl} alt={project.title} className="project-image" /> */}
       </div>
       
       <div className='col-lg-8'>

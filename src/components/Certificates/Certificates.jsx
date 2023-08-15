@@ -3,17 +3,21 @@ import './Certificates.css'; // Import your CSS file for styling
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import cdac from './CDAC Certificate.jpg';
+import cdac_low from './CDAC__low.jpg'
 import ansys from './Ansys.jpg';
+import ansys_low from './Ansys_low.jpg';
 import catia from './Catia.jpg';
+import catia_low from './Catia_low.jpg';
+import ProgressiveImage from '../ImageLoader/ProgressiveImage';
 
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const certificates = [
-    { title: 'CDAC', imageSrc: cdac },
-    { title: 'ANSYS', imageSrc: ansys },
-    { title: 'CATIA', imageSrc: catia },
+    { title: 'CDAC', imageSrc: cdac, lowQimg:cdac_low },
+    { title: 'ANSYS', imageSrc: ansys, lowQimg:ansys_low },
+    { title: 'CATIA', imageSrc: catia, lowQimg:catia_low },
   ];
 
   const handleCertificateClick = (index) => {
@@ -48,14 +52,15 @@ const Certificates = () => {
               onClick={() => handleCertificateClick(index)}
             >
               <h2>{certificate.title}</h2>
-              <LazyLoadImage
+              {/* <LazyLoadImage
                 className="img"
                 src={certificate.imageSrc}
                 alt={certificate.title}
                 width="150" // Initial small size
                 height="150"
                 effect="blur"
-              />
+              /> */}
+              <ProgressiveImage src={certificate.imageSrc} alt={certificate.title} className="project-image" placeholder={certificate.lowQimg}/>
             </div>
           ))
         )}
