@@ -60,7 +60,8 @@ const Certificates = () => {
                 height="150"
                 effect="blur"
               /> */}
-              <ProgressiveImage src={certificate.imageSrc} alt={certificate.title} className="project-image" placeholder={certificate.lowQimg}/>
+              <ProgressiveImage src={certificate.imageSrc} alt={certificate.title} className="project-image" placeholder={certificate.lowQimg}
+                width="150" height="150"/>
             </div>
           ))
         )}
