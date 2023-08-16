@@ -42,7 +42,7 @@ function ProjQuad() {
           <u><strong>Awards</strong></u>:{project.awards.join(', ')}
         </p>
         <p className="project-description"><u><strong>Description</strong></u>:{project.description}</p>
-        <p className="project-description"><u><strong>USP</strong></u>:{project.USP}</p>
+        {/* <p className="project-description"><u><strong>USP</strong></u>:{project.USP}</p> */}
         <div className="d-flex justify-content-end">
         <a
           href={project.youtube_link}

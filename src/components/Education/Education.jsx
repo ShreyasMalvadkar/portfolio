@@ -31,9 +31,9 @@ const Education = () => {
                           };
 
   return (
-    <div className="education-container container-fluid">
+    <div className="education-container">
       <h3>Education</h3><hr/>
-      <div className="education m-2 p-2 division" onClick={togglePG}>
+      <div className="education m-2 p-2 division container-fluid" onClick={togglePG}>
       <div className='h3'>{showPG ? <ArrowDropDownIcon fontSize='large'/> : <ArrowRightIcon fontSize='large'/>}Post Graduation</div>
         {showPG && (
           <div className="education-details">
