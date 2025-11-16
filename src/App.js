@@ -1,68 +1,57 @@
-import { Route, Routes } from "react-router-dom";
-import About from "./components/About/About";
-import Certificates from "./components/Certificates/Certificates";
-import ContactDetails from "./components/ContactMe/ContactDetails";
-import ContactEmail from "./components/ContactMe/ContactEmail";
-import Education from "./components/Education/Education";
-import Home from "./components/Home/Home";
-import Menu from "./components/Menu/Menu";
-import ProjBE from "./components/Projects/BE/ProjBE";
-import ProjCDAC from "./components/Projects/CDAC/ProjCDAC";
-import Projects from "./components/Projects/Projects";
-import ProjQuad from "./components/Projects/Quad/ProjQuad";
-import ProjSAE from "./components/Projects/Supra/ProjSAE";
-import Welcome from "./components/Welcome/Welcome";
-import TechSkills from "./components/Technical Skills/TechSkills";
-import "./App.css";
-import Extra from "./components/Extra/Extra";
-import HorizontalMenu from "./components/Menu/HorizontalMenu";
-import { useEffect } from "react";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import AboutMe from "./components/About/AboutMe";
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Projects from './components/Projects';
+import Certificates from './components/Certificates';
+import Interests from './components/Interests';
+import Contact from './components/Contact';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-      /* you can also use 'auto' behaviour in place of 'smooth' */
-    });
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'skills', 'experience', 'education', 'projects', 'certificates', 'interests', 'contact'];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="App gradient container-fluid">
-      <div className="row display">
-        {/* <div className="col-md-3 center">
-          <Menu />
-        </div> */}
-        <div className="col-lg-12 d-flex align-self-center center">
-          <ScrollToTop />
-          <Routes basename="/portfolio">
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/more" element={<Home />} />
-            <Route path="/about" element={<AboutMe />} />
-            <Route path="/contact" element={<ContactDetails />} />
-            <Route path="/sendEmail" element={<ContactEmail />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projcdac" element={<ProjCDAC />} />
-            <Route path="/projbe" element={<ProjBE />} />
-            <Route path="/projsae" element={<ProjSAE />} />
-            <Route path="/projquad" element={<ProjQuad />} />
-            <Route path="/certificates" element={<Certificates />} />
-            <Route path="/techskills" element={<TechSkills />} />
-            <Route path="/extras" element={<Extra />} />
-            <Route path="*" exact={true} element={<Welcome />} />
-          </Routes>
-        </div>
-      </div>
-      <div className="row container-fluid">
-        <div className="col-lg-12 d-flex align-self-center">
-          <HorizontalMenu />
-        </div>
-      </div>
+    <div className="App">
+      <Header activeSection={activeSection} />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <Certificates />
+        <Interests />
+        <Contact />
+      </main>
     </div>
   );
 }
 
 export default App;
+

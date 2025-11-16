@@ -1,36 +1,36 @@
 .App {
   min-height: 100vh;
-  min-width: 100vw;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  font-family: "Lucida Console", "Courier New", monospace;
-  min-width: 100vw;
 }
 
-.gradient{
-  background: rgb(40,44,52);
-  background: linear-gradient(90deg, rgba(40,44,52,1) 50%, rgba(69,114,124,1) 100%);
+main {
+  padding-top: 70px;
 }
 
-.center{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
-.display{
-  min-height: 90vh;
-}
-
-@media screen and (max-width: 768px) {
-  .horizontal-menu {
-    flex-direction: column;
-    align-items: stretch;
-    position: sticky;
-    top: 0;
+@media (max-width: 480px) {
+  main {
+    padding-top: 60px;
   }
+}
 
-  /* Rest of the media query styles */
+/* Section spacing */
+section {
+  padding: clamp(60px, 8vw, 120px) 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 40px 0;
+  }
 }
 
